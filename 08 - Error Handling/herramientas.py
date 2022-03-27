@@ -2,6 +2,7 @@ class Herramientas:
     def __init__(self, lista_numeros):
         if (type(lista_numeros) != list):
             self.lista = []
+            # el raise genera una excepción en caso de que exista, se genera un dato en memoria y se informa el error
             raise ValueError('Se ha creado una lista vacía. Se esperaba una lista de núemeros enteros')  
         else:
             self.lista = lista_numeros
